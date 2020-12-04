@@ -1,0 +1,14 @@
+[alias]
+        a = add
+        s = status
+        b = branch
+        can = commit --amend --no-edit
+        pf = push --force
+        rewrite = "!git add . && git can && git push -f"
+        la = "!git config -l | grep alias | cut -c 7-"
+	find = "!git ls-files | grep -i"
+	unpush = "!git push --force origin HEAD^:$(git branch)"
+
+[user]
+	name = Vlad
+	email = vladimir@hraban.net
