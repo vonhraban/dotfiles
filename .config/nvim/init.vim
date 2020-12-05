@@ -3,7 +3,9 @@ call plug#begin("~/.vim/plugged")
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+    
 call plug#end()
 
 set t_Co=256
